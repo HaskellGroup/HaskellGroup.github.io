@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" media="screen" href="css/front.css" data-turbolinks-track="reload">
+    <style>
+      body { background: #e5e5e5; }
+      .header .navbar-brand b { color: #8D5289; }
+      .header #main-nav-menu .navbar-nav li a:hover, .header #main-nav-menu .navbar-nav li.active a, .header #main-nav-menu .navbar-nav li.active a:focus, .header #main-nav-menu .navbar-nav li.active a:hover { color: #EB5424; border-color: #EB5424; }
+      .header .navbar-inverse .navbar-nav .open .dropdown-menu li.active a { color: #EB5424; }
+      abbr {  text-decoration: none; }
+    </style>
+
+    <link rel="stylesheet" media="all" href="css/application.css">
+    <link rel="stylesheet" media="all" href="css/font-awesome.min.css">
+    <script src="js/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="z9x2yKQsaxXRs2_wHmRNhUyGzR_Uw5cjR209zKljTpk" />
+    <title>Haskell China</title>
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <link rel="alternate" type="application/rss+xml" title="订阅最新帖" href="">
+    <link rel="icon" href="">
+  </head>
+
+  <body class="page-home" data-controller-name="home">
+    <div class="header">
+      <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+        <div class="container">
+          <div class="navbar-header" id="navbar-header" data-turbolinks-permanent="">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle</span>
+              <i class="fa fa-reorder"></i>
+            </button>
+            <a href="http://haskellchina.org/" class="navbar-brand"><b>Haskell</b> China</a>
+
+          </div>
+          <div class="navbar-collapse collapse" id="main-navbar-collapse" aria-expanded="false" style="height: 1px;">
+
+            <div id="main-nav-menu">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="https://github.com/hskll/community/issues">社区</a></li>
+                <li class=""><a href="https://github.com/hskll/community/issues?utf8=%E2%9C%93&q=%E6%8B%9B%E8%81%98%20%E6%B1%82%E8%81%8C">招聘</a></li>
+                <li class=""><a href="https://github.com/hskll/community/wiki">Wiki</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="main" class="main-container container">
+
+      <div class="panel panel-default hidden-xs">
+        <div class="panel-body" style="text-align: center;">
+          <div class="media" style="width: 480px; margin:0px auto; text-align: left;">
+            <div class="media-left">
+              <img src="images/gift.svg" style="width: 55px;">
+            </div>
+            <div class="media-body" style="line-height: 200%; text-align: center;">
+              <div style="font-size: 15px">
+                Haskell China 上线啦！
+              </div>
+              <div>
+                <code style="padding: 4px 10px;"><a href="http://haskellchina.org">http://haskellchina.org</a></code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row home-icons hidden-sm hidden-xs">
+        <div class="col-md-3">
+          <div class="item item1">
+            <div class="icon">
+              <a href="https://github.com/hskll/community/issues"><i class="fa fa-futbol-o" aria-hidden="true"></i></a>
+            </div>
+            <div class="text">
+              <a href="https://github.com/hskll/community/issues">Haskell 社区 <i class="pull-right fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item item2">
+            <div class="icon">
+              <a href="https://github.com/hskll/community/wiki"><i class="fa fa-puzzle-piece" aria-hidden="true"></i></a>
+            </div>
+            <div class="text">
+              <a href="https://github.com/hskll/community/wiki">技术文档 <i class="pull-right fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item item3">
+            <div class="icon">
+              <a href="https://github.com/hskll/community/issues?utf8=%E2%9C%93&q=%E6%8B%9B%E8%81%98%20%E6%B1%82%E8%81%8C"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+            </div>
+            <div class="text">
+              <a href="https://github.com/hskll/community/issues?utf8=%E2%9C%93&q=%E6%8B%9B%E8%81%98%20%E6%B1%82%E8%81%8C" title="Haskell 及函数式编程相关的招聘与求职">招聘与求职 <i class="pull-right fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item item4">
+            <div class="icon">
+              <a href="https://github.com/hskll/community/labels/excellent%20topic"><i class="fa fa-snowflake-o" aria-hidden="true"></i></a>
+            </div>
+            <div class="text">
+              <a href="https://github.com/hskll/community/labels/excellent%20topic">精华文章 <i class="pull-right fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home_suggest_topics panel panel-default">
+        <div class="panel-heading">社区精华帖</div>
+        <div class="panel-body topics row">
+          <div class="col-md-6 topics-group" id="topic-list">
+
+              <% @issues.each do |i| %>
+                  <% user_name = i["user"] ? i["user"]["login"] : "someone" %>
+                  <% user_home_url = i["user"] ? i["user"]["html_url"] : i["html_url"] %>
+                  <% user_avatar = i["user"] ? i["user"]["avatar_url"] : "https://avatars1.githubusercontent.com/u/33684584?s=200&v=4" %>
+                  <div class="topic media">
+                      <div class="avatar media-left">
+                          <a title="<%= user_name %>" href="<%= user_home_url %>">
+                              <img class="media-object avatar-48" src="<%= user_avatar %>">
+                          </a>
+                      </div>
+                      <div class="infos media-body">
+                          <div class="title media-heading">
+                              <a title="<%= i["title"] %>" href="<%= i["html_url"] %>">
+                                  <span class="node">Haskell</span>
+                                  <%= i["title"] %>
+                              </a><i title="" class="fa fa-diamond" data-toggle="tooltip" data-original-title="精华帖"></i>
+                          </div>
+                          <div class="info">
+                              <a class="user-name" href="<%= user_home_url %>"><%= user_name %></a>
+                              <span class="hidden-mobile">
+                                  •
+                                  最新回复于 <abbr class="timeago" title=""><%= i["updated_at"] %></abbr>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="count media-right">
+                          <a class="state-false" href="<%= i["html_url"] %>"><%= i["comments"] %></a>
+                      </div>
+                  </div>
+              <% end %>
+
+          </div>
+        </div>
+        <div class="panel-footer">
+          <a href="https://github.com/hskll/community/labels/excellent%20topic">查看更多精华帖...</a>
+        </div>
+      </div>
+
+      <div class="index-sections panel panel-default">
+        <div class="panel-heading">讨论节点分类导航</div>
+        <div class="panel-body">
+          <div class="row node-list">
+
+            <div class="node media">
+              <label class="media-left">Haskell</label>
+              <span class="nodes media-body">
+                <span class="name"><a title="精华" href="https://github.com/hskll/community/labels/excellent%20topic">精华帖</a></span>
+              </span>
+            </div>
+
+            <div class="node media">
+              <label class="media-left">其他语言</label>
+              <span class="nodes media-body">
+                <span class="name"><a title="Agda" href="https://github.com/hskll/community/issues?q=agda">Agda</a></span>
+                <span class="name"><a title="Idris" href="https://github.com/hskll/community/issues?q=idris">Idris</a></span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="index-locations panel panel-default">
+        <div class="panel-heading">Haskell 站点</div>
+        <div class="panel-body location-list" style="text-align:center;">
+          <span class="name"><a href="https://www.haskell.org/">Haskell 官网</a></span>
+          <span class="name"><a href="https://wiki.haskell.org/Haskell">Haskell Wiki</a></span>
+          <span class="name"><a href="http://qq.haskellchina.org/">HaskellChina QQ群</a></span>
+          <span class="name"><a href="https://www.haskell.org/hoogle/">Hoogle</a></span>
+          <span class="name"><a href="https://www.schoolofhaskell.com/">School of Haskell</a></span>
+        </div>
+      </div>
+
+
+    </div>
+
+    <footer class="footer" id="footer" data-turbolinks-permanent="">
+      <div class="container">
+        <div class="media">
+          <div class="media-left" style="margin-right:20px;">
+            <img class="media-object" src="images/haskell_logo.svg" style="width: 64px;">
+          </div>
+
+          <div class="media-body">
+            <div class="links">
+                <a href="https://github.com/hskll/community">关于</a> / <a href="https://mirror.tuna.tsinghua.edu.cn/help/stackage/">stackage 镜像</a>
+            </div>
+            <div class="copyright">
+                由众多爱好者共同维护的 Haskell 中文社区，本站主要依赖 <a href="https://github.com/">GitHub</a> 平台工具构建, 首页模版基于 <a href="https://ruby-china.org" target=_blank>Ruby China</a> 首页
+            </div>
+            <div class="supports" style="margin: 10px 0;">
+            </div>
+            <div class="links" style="margin-top:8px">
+              <span class="socials">
+                <a href="http://github.com/hskll" target="_blank" rel="nofollow" title="本站在 GitHub 上面的开源内容"><i class="fa fa-github"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="zoom-overlay"></div>
+    <div style="display:none">
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?b8f13183dab6bf5cda72bb2ac4a6c088";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </div>
+  </body>
+</html>
