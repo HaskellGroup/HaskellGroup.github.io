@@ -3,4 +3,5 @@
 
 ## Haskell 中文社区站点
 
-http://haskellchina.org
+http://haskellchina.org 
+https://hskll.github.io (备用)
