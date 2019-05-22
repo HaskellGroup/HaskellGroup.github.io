@@ -18,26 +18,15 @@ def get_template()
   File.read('./index.html.erb')
 end
 
-class GitHubIssues
-  include ERB::Util
-  attr_accessor :issues, :template
-
-  def initialize(issues, template)
-    @issues = issues
-    @template = template
-  end
-
-  def render()
-    ERB.new(@template).result(binding)
-  end
-
-  def save(file)
-    File.open(file, "w+") do |f|
-      f.write(render)
-    end
-  end
-
+def render()
+  ERB.new(get_template).result(binding)
 end
 
-issues = GitHubIssues.new(get_issues, get_template)
-issues.save(File.join('../', 'index.html'))
+def save(file)
+  File.open(file, "w+") do |f|
+    f.write(render)
+  end
+end
+
+@issues = get_issues
+save(File.join('../', 'index.html'))
