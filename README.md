@@ -3,6 +3,6 @@
 
 ## Haskell 中文社区站点
 
-http://haskell.group
+https://haskell.group
 
-https://hskll.github.io (备用)
+https://HaskellGroup.github.io (备用)
